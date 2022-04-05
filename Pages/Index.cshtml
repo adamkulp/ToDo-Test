@@ -1,0 +1,72 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "TodoList";
+}
+@using (@Html.BeginForm(FormMethod.Post))
+
+{
+        <div>
+       <p>What do you have planned?:@Html.TextBoxFor(p => p.MyTask.Description,"Description",new {@class="form-control"})</p>
+       <p>Event Start Date and Time?:@Html.TextBoxFor(p => p.MyTask.StartDate,"StartDate",new {@class="form-control",@type="datetime"})</p>
+       <p>Event End Date and Time?:@Html.TextBoxFor(p => p.MyTask.EndDate,"EndDate",new {@class="form-control",@type="datetime"})</p>
+       <p>Event Priority (1 being lowest and 3 being highest)?:@Html.TextBoxFor(p => p.MyTask.Priority,"Priority",new {@class="form-control"})</p>
+       @*  <input asp-for="MyTask.Id" type="text"/>
+            <input asp-for="MyTask.Description" type="text"/>
+            <input asp-for="MyTask.StartDate" type="text"/>
+            <input asp-for="MyTask.EndDate" type="text"/>
+            <input asp-for="MyTask.Priority" type="text"/>*@
+
+        <input type="submit" value="submit" asp-route-action="Add"/>
+        </div>
+
+    
+    <table id="example" class="table table-striped" style="width:100%;top:0px; ">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+            <th>Description</th>
+                <th>Priority</th>
+            </tr>
+        </thead>
+        <tbody>
+        @using  (@Html.BeginForm(""))
+        
+        {
+            @foreach (var task in @Model.ToDoTasks)
+            {
+
+
+                    <tr>
+                        <td>@task.Id</td>
+                        <td>@task.StartDate</td>
+                        <td>@task.EndDate</td>
+                        <td>@task.Description</td>
+                        <td>@task.Priority</td>
+                        <td>
+                        <button asp-page-handler="" asp-route-id="@task.Id" asp-route-action="Delete">
+                            delete
+                        </button>
+
+                        <a class="btn btn-warning btn-xs" asp-page="EditTask" asp-route-id="@task.Id" style="background-color: green; height: 29px; margin-top: -1px;">
+                                                        Edit
+                                                        </a>
+                        </td>
+
+                    </tr>
+            }
+        }
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>ID</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Description</th>
+                <th>Priority</th>
+            </tr>
+        </tfoot>
+    </table>
+    }

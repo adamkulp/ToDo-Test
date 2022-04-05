@@ -1,0 +1,127 @@
+﻿@page
+@model ToDo_Test.Pages.Index1Model
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Architects+Daughter&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lakki+Reddy&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/css/theme.bootstrap_4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg bg-dark bg-gradient navigation-clean-search">
+        <div class="container"><a class="navbar-brand" href="#" style="padding-right: 419px;">Todo List</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="Home" style="padding-right: 11px;color: var(--bs-blue);">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Logout" style="color: var(--bs-blue);">Logout</a></li>
+                    <li class="nav-item"></li>
+                </ul>
+                <form class="me-auto search-form" target="_self">
+                    <div class="d-flex align-items-center" style="padding-right: 0px;margin-right: 0px;margin-left: 470px;"><label class="form-label d-flex mb-0" for="search-field"></label></div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="input-group"></div>
+    <p style="text-align: center;font-size: 30px;font-family: 'Alfa Slab One', serif;">welcome!!!</p>
+    <p style="text-align: center;font-family: 'Architects Daughter', serif;color: var(--bs-purple);font-weight: bold;">What's Going on In your Life?</p>
+    <p style="font-family: 'Lakki Reddy', serif;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Date Start&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Date End&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Time Start&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Time End&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Task&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Priority</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 offset-xxl-0 align-self-center"><input type="date" style="width: 143px;" /><input type="date" style="width: 143px;"></div>
+            <div class="col-md-3 align-self-center"><input type="time" style="width: 143px;"><input type="time" style="width: 143px;"></div>
+            <div class="col-md-3" style="padding-right: 12px;padding-left: 14px;"><input class="form-control-lg" type="text" placeholder="Add Obligation" name="Task" autocomplete="on" style="margin-bottom: 0px;padding-bottom: 4px;padding-top: 3px;margin-top: 17px;padding-left: 125px;"></div>
+            <div class="col-md-3" style="padding-left: 130px;">
+                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-5"><label class="form-check-label" for="formCheck-5" style="color: var(--bs-success);font-weight: bold;">Low Priority</label></div>
+                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-6"><label class="form-check-label" for="formCheck-6" style="color: var(--bs-yellow);font-weight: bold;">Medium Priority</label></div>
+                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-7"><label class="form-check-label" for="formCheck-7" style="color: var(--bs-danger);font-weight: bold;">High Priority</label></div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="margin-bottom: 50px;">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-6">
+                <h3 class="text-white mb-4">Dashboard</h3>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 text-end" style="margin-bottom: 30px;"><a class="btn btn-primary" role="button"><i class="fa fa-plus"></i>Add ToDo Item</a></div>
+        </div>
+        <div class="card" id="TableSorterCard" style="border-style: none;border-radius: 6.5px;">
+            <div class="card-header py-3" style="border-width: 0px;background: rgb(23,25,33);">
+                <div class="row table-topper align-items-center">
+                    <div class="col-12 col-sm-5 col-md-6 text-start" style="margin: 0px;padding: 5px 15px;">
+                        <p class="m-0 fw-bold" style="color: rgb(255,255,255);">ToDo's</p>
+                    </div>
+                    <div class="col-12 col-sm-7 col-md-6 text-end" style="margin: 0px;padding: 5px 15px;"><button class="btn btn-dark btn-sm reset" type="button" style="margin: 2px;">Clear Filter</button><button class="btn btn-light btn-sm" id="zoom_in" type="button" zoomclick="ChangeZoomLevel(-10);" style="margin: 2px;"><i class="fa fa-search-plus"></i></button><button class="btn btn-light btn-sm" id="zoom_out" type="button" zoomclick="ChangeZoomLevel(-10);" style="margin: 2px;"><i class="fa fa-search-minus"></i></button></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="table-responsive" style="border-top-style: none;background: #171921;">
+                        <table class="table table-striped table tablesorter" id="ipi-table">
+                            <thead class="thead-dark" style="background: rgb(33,37,48);border-width: 0px;border-color: rgb(0,0,0);border-bottom-color: #21252F;">
+                                <tr style="border-style: none;border-color: rgba(255,255,255,0);background: #21252f;">
+                                    <th style="width: 130px;color: rgb(8,249,18);">Task Completed?</th>
+                                    <th style="color: rgb(244,10,10);">&nbsp;ID</th>
+                                    <th class="text-center" style="width: 150px;color: var(--bs-danger);">Date Start</th>
+                                    <th style="width: 150px;color: var(--bs-danger);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Date End</th>
+                                    <th style="width: 150px;color: #66d7d7;">&nbsp; &nbsp; &nbsp; &nbsp; Time Start</th>
+                                    <th class="text-center" style="width: 150px;color: #66d7d7;">Time End</th>
+                                    <th style="width: 500px;color: var(--bs-yellow);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Description</th>
+                                    <th class="text-center filter-false sorter-false" style="margin-top: -1px; color: var(--bs-blue)">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center" style="border-top-width: 0px;">
+                                <tr style="background: #262a38;">
+                                    <td></td>
+                                    <td>Cell 2</td>
+                                    <td style="color: rgb(255,255,255);"></td>
+                                    <td style="color: rgb(255,255,255);"></td>
+                                    <td style="color: rgb(255,255,255);"></td>
+                                    <td style="color: rgb(255,255,255);"></td>
+                                    <td style="color: rgb(254,255,255);padding-right: 234px;"></td>
+                                    <td class="text-center align-middle" style="max-height: 60px;height: 60px;margin-right: 0px;padding-right: 0px;padding-left: 43px;"><a class="btn btnMaterial btn-flat success semicircle" role="button" href="#" style="color: rgb(0,197,179);"><i class="fas fa-pen"></i></a><a class="btn btnMaterial btn-flat accent btnNoBorders checkboxHover" role="button" style="margin-left: 5px;" data-bs-toggle="modal" data-bs-target="#delete-modal" href="#"><i class="fas fa-trash btnNoBorders" style="color: #DC3545;"></i></a></td>
+                                </tr>
+                                <tr style="background: #212430;">
+                                    <td>Cell 1</td>
+                                    <td>Cell 2</td>
+                                    <td style="color: rgb(255,255,255);"><br></td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 3</td>
+                                    <td style="color: rgb(255,255,255);"></td>
+                                    <td>Cell 6</td>
+                                    <td style="color: rgb(255,255,255);"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-filter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-storage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="assets/js/Ludens---1-Dark-mode-Index-Table-with-Search-Filters-1.js"></script>
+    <script src="assets/js/Ludens---1-Dark-mode-Index-Table-with-Search-Filters-2.js"></script>
+    <script src="assets/js/Ludens---1-Dark-mode-Index-Table-with-Search-Filters.js"></script>
+</body>
+
+</html>

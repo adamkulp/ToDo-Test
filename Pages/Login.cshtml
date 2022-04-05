@@ -1,0 +1,64 @@
+﻿@page
+@model ToDo_Test.Pages.LoginModel
+@{
+}
+
+<link rel="stylesheet" href="~/css/Login.css" asp-append-version="true" />
+ <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-dark navigation-clean">
+        <div class="container"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button><a class="navbar-brand text-center" href="#" style="color: var(--bs-red);margin-left: -229px;">ToDo Application</a>
+            <div class="collapse navbar-collapse d-xxl-flex justify-content-xxl-center" id="navcol-1" style="margin-left: 0px;">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="Home" style="color: var(--bs-blue);font-weight: bold;margin-right: 0px;">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Register" style="color: var(--bs-blue);font-weight: bold;margin-left: 0px;">Register</a></li>
+                    <li class="nav-item"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+
+            <div class="mb-md-5 mt-md-4 pb-5">
+
+              <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+              <p class="text-white-50 mb-5">Please enter your login and password!</p>
+
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="typeEmailX" class="form-control form-control-lg" />
+                <label class="form-label" for="typeEmailX">Email</label>
+              </div>
+
+              <div class="form-outline form-white mb-4">
+                <input type="password" id="typePasswordX" class="form-control form-control-lg" />
+                <label class="form-label" for="typePasswordX">Password</label>
+              </div>
+
+              <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>
+
+              <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+
+              <div class="d-flex justify-content-center text-center mt-4 pt-1">
+                <a href="#!" class="text-white"><i class="fa-brands fa-google fa-3x text-danger"></i></a>
+                <a href="#!" class="text-white"><i class="fa-brands fa-twitter fa-3x text-info"></i></a>
+                <a href="#!" class="text-white"><i class="fa-brands fa-facebook fa-3x text-primary"></i></a>
+              </div>
+
+            </div>
+
+            <div>
+              <p class="mb-0">Don't have an account? <a href="#!" class="text-white-50 fw-bold">Sign Up</a></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <script src="https://use.fontawesome.com/f098d484ae.js"></script>
+            <script src="https://kit.fontawesome.com/6d2835979f.js" crossorigin="anonymous"></script>

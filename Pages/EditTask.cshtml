@@ -1,0 +1,21 @@
+﻿@page
+@model ToDo_Test.Pages.EditTaskModel
+
+@{
+}
+@using (@Html.BeginForm(FormMethod.Post))
+{
+<div>
+    @*@Html.TextBoxFor(p => p.Description,"Description",new {@class="form-control"})
+    @Html.TextBoxFor(p => p.StartDate,"StartDate",new {@class="form-control"})
+    @Html.TextBoxFor(p => p.EndDate,"EndDate",new {@class="form-control"})
+    @Html.TextBoxFor(p => p.Priority,"Priority",new {@class="form-control"})*@
+        <input readonly asp-for="EditTask.Id" type="text"/>
+        <input asp-for="EditTask.Description" type="text"/>
+        <input asp-for="EditTask.StartDate" type="text"/>
+        <input asp-for="EditTask.EndDate" type="text"/>
+        <input asp-for="EditTask.Priority" type="text"/>
+                      
+    <input type="submit" value="submit"/>
+</div>
+}

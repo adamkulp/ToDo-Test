@@ -1,0 +1,55 @@
+﻿@page
+@model ToDo_Test.Pages.Index2Model
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>ez</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allan&amp;display=swap">
+</head>
+
+<body style="background: url(lib/img/city.jpg);">
+    <nav class="navbar navbar-light navbar-expand-lg bg-dark navigation-clean-button" style="background: url(lib/img/retro.jpg);">
+        <div class="container"><a class="navbar-brand text-center" style="color: var(--bs-pink);font-size: 40px;margin-right: 0px;margin-left: 461px; var(--bs-dark);font-family: Aldrich, sans-serif;">MY TODO LIST</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                </ul><span class="navbar-text actions"> <a class="btn btn-light action-button" role="button" href="Index">Home</a></span>
+            </div>
+        </div>
+    </nav>
+    <form>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"><input class="form-control-plaintext bg-dark bg-gradient border rounded-pill" type="text" value="Date Start/End" readonly="" style="margin-left: -580px;color: #56c6c6;font-weight: bold;background: linear-gradient(black, white 46%);text-align: center;width: 232px;margin-top: 97px;"></div>
+            <div class="col-md-3"><input class="form-control-plaintext bg-dark bg-gradient border rounded-pill" type="text" value="Time Start/End" readonly="" style="margin-left: -295px;color: #56c6c6;font-weight: bold;background: linear-gradient(black, white 27%);width: 204px;text-align: center;margin-top: 96px;"></div>
+            <div class="col-md-3"><input class="form-control-plaintext bg-dark bg-gradient border rounded-pill" type="text" value="Description" readonly="" style="color: var(--bs-red);font-weight: bold;background: linear-gradient(black, white 29%);text-align: center;width: 374px;margin-top: 85px;"></div>
+            <div class="col-md-3"><input class="form-control-plaintext bg-dark bg-gradient border rounded-pill border-white" type="text" value="Priority" readonly="" style="margin-left: 174px;color: var(--bs-warning);font-weight: bold;background: linear-gradient(black, white 21%);text-align: center;margin-top: 92px;"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3"><input type="date" style="margin-left: 17px;" name="dstart"><input type="date" name="dend"></div>
+        <div class="col-md-3"><input type="time" name="tstart"><input type="time" name="tend"></div>
+        <div class="col-md-3 col-xxl-3"><input type="text" style="width: 419px;margin-left: -26px;" required="" name="description" placeholder="Add Obligation..."></div>
+        <div class="col-md-3" style="margin-left: 0px;">
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label text-success" for="formCheck-1">Low</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label text-warning" for="formCheck-2">Medium</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label text-danger" for="formCheck-3">High</label></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"><button class="btn btn-dark" type="submit" id="submit" style="margin-left: 478px;width: 200px;font-family: Allan, serif;font-size: 20px;">Submit</button></div>
+        </div>
+    </div>
+    </form>
+</body>
+
+</html>
+    <script src="js/site.js"></script>
